@@ -13,25 +13,52 @@
 </head>
 
 <body>
-  <nav>
+  <nav id="navbar">
     <!-- create the navbar here -->
-    <div>navigation...</div>
+    <div id="logo">
+      <span>HTML</span><span> || </span><span>CSS</span>
+    <ul>
+      <li>
+        <a href="#top" tabindex="0">Top</a>
+      </li>
+      <li>
+        <a href="#images">Images</a>
+      </li>
+      <li>
+        <a href="#semantics">Semantics</a>
+      </li>
+      <li>
+        <a href="#navigation">Navigation</a>
+      </li>
+      <li>
+        <a href="#other">Other</a>
+      </li>
+      <li>
+        <a href="#bottom">Bottom</a>
+      </li>
+    </ul>
   </nav>
 
-  <h1>My Accessible Webpage</h1>
+  <h1 id="top">My Accessible Webpage</h1>
 
   <main>
     <article>
       <header>
-        <h2>Images</h2>
+        <h2 id="images">Images</h2>
       </header>
+
+      <a href="https://en.wikipedia.org/wiki/Anchor" target="_blank">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS50HNutzoHjpwyKwREpxnhTEfjKUw8XSdXXUHU47Ufwlp8XT7h&s"
+          alt="Black and white drawing of an anchor." />
+      </a>
 
       <p>Do not forget to use the <strong>alt</strong> property!</p>
     </article>
 
     <article>
       <header>
-        <h2>Semantics</h2>
+        <h2 id="semantics">Semantics</h2>
       </header>
 
       <p>Some of the elements has semantic meaning such as <em>header, footer, strong, etc</em>.</p>
@@ -39,7 +66,7 @@
 
     <article>
       <header>
-        <h2>Navigation</h2>
+        <h2 id="navigation">Navigation</h2>
       </header>
 
       <p>The page should be navigated by keyboard. Think about the <em>tabindex</em> property, as well.</p>
@@ -47,22 +74,41 @@
 
     <article>
       <header>
-        <h2>Other things to practie</h2>
+        <h2 id="other">Other things to practie</h2>
       </header>
 
-      <p>Create table, do a proper img, try iframe, embed audio &amp; video
+      <p>Form, Create table, try iframe, embed audio &amp; video
         <br>
         If you done, try more!
       </p>
     </article>
+
+    <div>dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+      dfdssfdsfsfsfsdfsfsfdfdssfdsfsfsfsdfsfsfdfd<br />
+    </div>
+
+
   </main>
 
-  <aside>
+  <aside tabindex="1">
     <h3>Aside element</h3>
     put here some anchor &lt;a&gt; elements...
   </aside>
 
-  <footer>
+  <footer id="bottom">
     <p>Copyright &copy; Pocok, 2019</p>
   </footer>
 </body>
