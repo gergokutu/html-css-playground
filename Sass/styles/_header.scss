@@ -1,28 +1,26 @@
 // notice the underscore (_) in the filename
 
-// create mixin
+// create mixin > use like a function in JS
 // adding default variables to mixin
-@mixin flexCenter($direction) {
+@mixin flexCenter($direction, $background) {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 50vh;
   flex-direction: $direction;
+  background: $background;
 }
 
 
 header {
 
   // add mixin
-  @include flexCenter(column);
-
-  background: $headerColor;
-  height: 50vh;
+  @include flexCenter(column, $headerColor);
   color: $textColor;
 
   // nesting
   button {
     background-color: $primaryButton;
-    color: $textColor;
     &:hover {
       background: red;
     }
