@@ -1,40 +1,16 @@
 // sass compiler extension should be watching to detect changes
 // and apply it in the css file
 
-// create a variable
-$primaryButton : rgb(217, 195, 238);
-$textColor: rgb(22, 40, 197);
-
-// moved to external file > _header.scss
-// header {
-//   background: rgb(181, 214, 226);
-//   display: flex;
-//   justify-content: center;
-//   // after saving the file >
-//   // puts a lot of thing in the css >
-//   // e.g display: -webkit-box;... >
-//   // cross-browser compatibility
-//   color: $textColor;
-
-//   // nesting
-//   button {
-//     background-color: $primaryButton;
-//     color: $textColor;
-//     &:hover {
-//       background: red;
-//     }
-//   }
-// }
-
-// header button {
-//   background-color: $primaryButton;
-//   color: $textColor;
-// }
-
 // import the moved out parts
+@import './variables';
 @import './header';
 
-.contact button {
+.contact {
+  @include flexCenter();
   background-color: $primaryButton;
   color: $textColor;
+}
+
+.contact button {
+  background: $headerColor;
 }

@@ -1,10 +1,23 @@
 // notice the underscore (_) in the filename
-header {
-  background: rgb(181, 214, 226);
+
+// create mixin
+@mixin flexCenter {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+
+header {
+
+  // add mixin
+  @include flexCenter();
+
+  background: $headerColor;
+  height: 50vh;
   color: $textColor;
 
+  // nesting
   button {
     background-color: $primaryButton;
     color: $textColor;
