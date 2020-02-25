@@ -1,17 +1,19 @@
 // notice the underscore (_) in the filename
 
 // create mixin
-@mixin flexCenter {
+// adding default variables to mixin
+@mixin flexCenter($direction) {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: $direction;
 }
 
 
 header {
 
   // add mixin
-  @include flexCenter();
+  @include flexCenter(column);
 
   background: $headerColor;
   height: 50vh;
