@@ -1,4 +1,4 @@
-header {
+header, .contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,34 +17,16 @@ header {
   color: #1628c5;
 }
 
-header button {
+header button, .contact button {
   background-color: #d9c3ee;
 }
 
-header button:hover {
+header button:hover, .contact button:hover {
   background: red;
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 50vh;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  background: #d9c3ee;
-  color: #1628c5;
-}
-
-.contact button {
-  background: #b5d6e2;
+  background-color: #4e9cb4;
+  width: 50%;
 }
 /*# sourceMappingURL=style.css.map */

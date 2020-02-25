@@ -9,14 +9,6 @@
   height: 50vh;
   flex-direction: $direction;
   background: $background;
-}
-
-
-header {
-
-  // add mixin
-  @include flexCenter(column, $headerColor);
-  color: $textColor;
 
   // nesting
   button {
@@ -25,4 +17,11 @@ header {
       background: red;
     }
   }
+}
+
+
+header {
+  // add mixin
+  @include flexCenter(column, $headerColor);
+  color: $textColor;
 }

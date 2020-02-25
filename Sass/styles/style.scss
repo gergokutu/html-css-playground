@@ -6,10 +6,12 @@
 @import './header';
 
 .contact {
-  @include flexCenter(row, $primaryButton);
-  color: $textColor;
-}
+  // extend
+  // inherit all the styles from the header
+  @extend header;
+  background-color: rgb(78, 156, 180);
 
-.contact button {
-  background: $headerColor;
+  // apply operation calculaltors (+, -...)
+  // calculating values
+  width: 100 / 2 + 0%;
 }
