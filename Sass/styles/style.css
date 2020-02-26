@@ -1,0 +1,32 @@
+header, .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #b5d6e2;
+  color: #1628c5;
+}
+
+header button, .contact button {
+  background-color: #d9c3ee;
+}
+
+header button:hover, .contact button:hover {
+  background: red;
+}
+
+.contact {
+  background-color: #4e9cb4;
+  width: 80%;
+}
+/*# sourceMappingURL=style.css.map */

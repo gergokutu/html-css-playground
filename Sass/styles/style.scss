@@ -1,0 +1,18 @@
+// sass compiler extension should be watching to detect changes
+// and apply it in the css file
+
+// import the moved out parts
+@import './variables';
+@import './header';
+
+.contact {
+  // extend
+  // inherit all the styles from the header
+  @extend header;
+  background-color: rgb(78, 156, 180);
+
+  // apply operation calculaltors (+, -...)
+  // calculating values
+  // width: 100 / 2 + 0%;
+  width: 100% - 20%;
+}
